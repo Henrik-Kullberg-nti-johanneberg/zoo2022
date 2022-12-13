@@ -1,1 +1,9 @@
 Lägg din css-fil här.
+
+#cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin:auto;
+    justify-content: center;
+ 

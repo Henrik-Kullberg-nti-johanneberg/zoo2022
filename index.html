@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, index html">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Nti Zoo</title> 
+</head>
+    
+<header>Nti Zoo</header>
+<div class="navbar">
+<ul>
+    <1i><a class="active" href="#home">Home</a></1i>
+    <1i><a href="#menu">Menu</a></1i>
+    <1i><a href="#about">About</a></1i>
+</ul>
+</div>
+
+  <div class="w3-card-4 w3-margin" style="width: 50%;"> 
+    <div class="w3-display-container w3-text-white">
+      <img src="img/animals/flamingo.jpeg" alt="lights" style="width: 100%;">
+      <div class="w3-xlarge w3-display-bottomleft w3-padding">
+    <body>
+    
+        <div class="header" id="myHeader">
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+          </div>
+          
+        
+          <div class="row"> 
+            <div class="column">
+              <img src= "img/animals/flamingo.jpeg"style=width:100%>
+              <img src= "img/animals/panda.jpeg"style=width:100%>
+              <img src= "img/animals/surikaten.jpeg"style=width:100%>
+              <img src= "img/animals/serval.webp"style=width:100%>
+              <img src= "img/animals/Lizard.jpeg"style=width:100%>
+              <img src= "img/animals/flamingo.jpeg"style=width:100%>
+              <img src= "img/animals/panda.jpeg"style=width:100%>
+            </div>
+            <div class="column">
+              <img src=  "img/animals/surikaten.jpeg"style=width:100%>
+              <img src=  "img/animals/serval.webp"style=width:100%>
+              <img src=  "img/animals/Lizard.jpeg"style=width:100%>
+              <img src=  "img/animals/flamingo.jpeg"style=width:100%>
+              <img src=  "img/animals/panda.jpeg"style=width:100%>
+              <img src=  "img/animals/surikaten.jpeg"style=width:100%>
+            </div>  
+            <div class="column">
+              <img src= "img/animals/serval.webp"style=width:100%>
+              <img src= "img/animals/Lizard.jpeg"style=width:100%>
+              <img src= "img/animals/flamingo.jpeg"style=width:100%>
+              <img src= "img/animals/panda.jpeg"style=width:100%>
+              <img src= "img/animals/surikaten.jpeg"style=width:100%>
+              <img src= "img/animals/serval.webp"style=width:100%>
+              <img src= "img/animals/Lizard.jpeg"style=width:100%>
+            </div>
+            <div class="column">
+              <img src= "img/animals/flamingo.jpeg"style=width:100%>
+              <img src= "img/animals/panda.jpeg"style=width:100%>
+              <img src= "img/animals/surikaten.jpeg"style=width:100%>
+              <img src= "img/animals/serval.webp"style=width:100%>
+              <img src= "img/animals/Lizard.jpeg"style=width:100%>
+              <img src= "img/animals/flamingo.jpeg"style=width:100%>
+            </div>
+          </div>
+          
+          <script>
+
+var elements = document.getElementsByClassName("column");
+
+var i;
+
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+    </body>
+    </html>
