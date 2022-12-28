@@ -1,45 +1,54 @@
  
  body {
-    background-color: #2cd782;
+    background-color: #71a5de;
 
 }
 
-#cardWrapper {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
-margin:auto;
-justify-content: center;
+.grid-card {
+    grid-gap: 100px;
+  }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto;
-background-color: #2196F3;
-padding: 10px;
-}
-.grid-item {
-background-color: rgba(255, 255, 255, 0.8);
-border: 1px solid rgba(0, 0, 0, 0.8);
-padding: 20px;
-font-size: 30px;
-text-align: center;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.row {
-display: flex;
-flex-wrap: wrap;
-padding: 0 4px;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.column {
-flex: 50%;
-padding: 0 4px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.column img {
-margin-top: 8px;
-vertical-align: middle;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 
