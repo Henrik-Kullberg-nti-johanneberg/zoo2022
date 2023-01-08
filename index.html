@@ -9,6 +9,7 @@
 </head>
 
 <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  <div class="w3-bar w3-border w3-green w3-large"></div>
   <button onclick="w3_close(1)" class="w3-bar-item w3-button w3-large">Close &times;</button>
   <a href="index.html" class="w3-bar-item w3-button">Home</a>
   <a href="foodpage.html" class="w3-bar-item w3-button">Food</a>
@@ -16,7 +17,7 @@
 </div>
 
 <div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open(1)">☰</button>
   <div class="w3-container">
     <h1>Nti Zoo</h1>
   </div>
@@ -25,37 +26,41 @@
 <script>
 function w3_open() {
   document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.height = "100%";
   document.getElementById("mySidebar").style.display = "block";
 }
 
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.height = "100%";
 }
 </script>
 
 <div class="card"> 
   <img src="img/animals/flamingo.jpeg" alt="beach in land" class="card-image"> 
-  <h1 class="card-title" > Welcome </h1>
+  <h2 class="card-title" > 
+    This is where the journey begins </h2>
 </div> 
 
 <div class="card"> 
-<img src="img/animals/panda.jpeg" alt="beach in land" class="card-image"> 
-
+ <img src="img/animals/panda.jpeg" alt="beach in land" class="card-image"> 
+ <h3 class="card-title" > Panda </h3>
 </div>
 
 <div class="card"> 
   <img src="img/animals/serval.webp" alt="beach in land" class="card-image"> 
-  
+  <h4 class="card-title" > Serval </h4>
   </div> 
 
   <div class="card"> 
     <img src="img/animals/surikaten.jpeg" alt="beach in land" class="card-image"> 
-    
+    <h5 class="card-title" > Surikaten </h5>
     </div> 
 
     <div class="card"> 
       <img src="img/animals/Lizard.jpeg" alt="beach in land" class="card-image"> 
-      
+      <h6 class="card-title" > Lizard </h6>
       </div> 
 
         <div class="header" id="myHeader">

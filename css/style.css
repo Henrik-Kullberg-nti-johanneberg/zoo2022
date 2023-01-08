@@ -7,11 +7,52 @@
  #cardWrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     margin:auto;
     justify-content: center;
 
 }
+
+.Sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 10;
+  left: 10;
+  background-color: rgb(152, 61, 61);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+h1 {
+  text-align: start;
+  color: #0b0b0b;
+} 
+
+h2 {
+  text-align: start;
+  color: #fca311;
+}
+
+h3 {
+  text-align: start;
+  color: #480ca8;
+} 
+
+h4 {
+  text-align: start;
+  color: #ff7900;
+} 
+
+h5 {
+  text-align: start;
+  color: #d823b1;
+} 
+
+h6 {
+  text-align: start;
+  color: #66d3f8;
+} 
 
 .grid-container {
   display: grid;
@@ -20,8 +61,8 @@
   padding: 10px;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(13, 12, 12, 0.8);
+  border: 3px solid rgba(213, 26, 26, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -30,7 +71,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 6px;
 }
 
 .column {
@@ -55,11 +96,11 @@
 .card{
   width: 300px;
   height: 450px;
-  background-color: #333;
+  background-color: rgb(181, 50, 50);
   border-radius: 15px;
   outline: 3px solid rgba(255, 255, 255, .5);
   outline-offset: -8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
 
